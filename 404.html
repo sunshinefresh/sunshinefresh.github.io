@@ -1,23 +1,34 @@
 ---
-permalink: /404.html
-layout: null
+title: Page Not Found
 ---
-
-<html>
-  <head>
-    <meta content='Scribble' property='og:title' />
-    <title>Scribble</title>
-    <link href='{{ site.url }}/images/fav.png' rel='shortcut icon'>
-    <link rel="stylesheet" href="{{ site.url }}/stylesheets/style.css"/>
-    <meta content='width=device-width, initial-scale=1.0, user-scalable=no' name='viewport'>
-    <meta content='text/html; charset=utf-8' http-equiv='content-type' />
-    <meta content='{{ site.url }}' property='og:url' />
-    <meta content="{{ site.description }}" property='og:description' />
-    <meta content="blog" property="og:type" />
-  </head>
-  <body class="lh-copy dark-gray ph3 pv5 f6 sans-serif tc bg-super-white">
-      <img src="{{ site.url }}/images/404.png" alt="not found" width="160" class="mb3" /><br>
-      <a href="{{ site.url }}" class="link blue hover-gray">Home</a>
-    </div>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{%- include head.html -%}
+	<style>
+	h2 {
+		font-feature-settings: "lnum";
+		background-color: #ddd;
+		width: 140px;
+		height: 140px;
+		border-radius: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center
+	}
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		font-size: 20px;
+		height: 80vh;
+	}
+	p {text-align: center; line-height: 2em;}
+	</style>
+</head>
+<body>
+	<h2>404</h2>
+	<p>Page not found.</p>
+</body>
 </html>
