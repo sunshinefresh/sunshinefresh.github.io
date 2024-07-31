@@ -15,7 +15,6 @@ show_excerpts: true # set to true to show excerpts on the homepage
 sass:
   sass_dir: _sass
 plainwhite:
-  analytics_id: "< freshtropicalmango >"
   name: Kim woo jung
   tagline: Developer. Designer
   date_format: "%b %-d, %Y"
