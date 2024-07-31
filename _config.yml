@@ -1,10 +1,13 @@
-title: Your awesome title
-author: GitHub User
-email: your-email@domain.com
+title: SunshineFresh
+author: tropicalmango
+email: freshtropicalmango@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  https://sunshinefresh.github.io/
+  https://velog.io/@tropicalmango/posts
+  https://blog.naver.com/sunshinefresh-
+
+  freshtropicalmango@gmail.com
+  tropicalmango@naver.com
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -12,7 +15,8 @@ show_excerpts: true # set to true to show excerpts on the homepage
 sass:
   sass_dir: _sass
 plainwhite:
-  name: Adam Denisov
+  analytics_id: "< freshtropicalmango >"
+  name: Kim woo jung
   tagline: Developer. Designer
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
@@ -26,9 +30,9 @@ plainwhite:
     - post
   # generate social links in footer
   social_links:
-    twitter: samarsault
+    #twitter: samarsault
     github:  samarsault
-    linkedIn: in/samarsault
+    #linkedIn: in/samarsault
     #dribbble: jekyll
     #flickr:   jekyll
     #instagram: jekyll
