@@ -1,10 +1,10 @@
 # Configurations
-title:            Book
+title:            가나다
 longtitle:        longBook
 author:           woojung
 email:            freshtropicalmango@gmail.com
 description: >
-  Demo
+  'Demo'
 
 version:          1.0
 gitbook_version:  3.2.3
