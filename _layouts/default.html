@@ -15,22 +15,22 @@
   <main class="container">
     <section class="about">
       <div class="about-header {{condensed_class}}">
-        <div class="about-title">
-          <a href="{{ "/" | relative_url}}">
-            {% if site.plainwhite.portfolio_image_dark and site.plainwhite.dark_mode %}
-            <img class="light" src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image }}" alt="{{ site.plainwhite.name }}" />
-            <img class="dark" src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image_dark }}" alt="{{ site.plainwhite.name }}" />
-            {% else %}
-            <img src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image }}" alt="{{ site.plainwhite.name }}" />
-            {% endif %}
-          </a>
-          <h2 id="title">
-            <a href="{{ "/" | relative_url }}">{{ site.plainwhite.name }}</a>
-          </h2>
-        </div>
-        {%- if site.plainwhite.tagline -%}
-        <p class="tagline">{{ site.plainwhite.tagline }}</p>
-        {%- endif -%}
+      <div class="about-title">
+      <a href="{{ "/" | relative_url}}">
+        {% if site.plainwhite.portfolio_image_dark and site.plainwhite.dark_mode %}
+        <img class="light" src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image }}" alt="{{ site.plainwhite.name }}" />
+        <img class="dark" src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image_dark }}" alt="{{ site.plainwhite.name }}" />
+        {% else %}
+        <img src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image }}" alt="{{ site.plainwhite.name }}" />
+        {% endif %}
+      </a>
+      <h2 id="title">
+        <a href="{{ "/" | relative_url }}">{{ site.plainwhite.name }}</a>
+      </h2>
+      </div>
+      {%- if site.plainwhite.tagline -%}
+      <p class="tagline">{{ site.plainwhite.tagline }}</p>
+      {%- endif -%}
       </div>
       {% capture footer %}
       {%- if site.plainwhite.social_links != '' -%}
@@ -56,10 +56,24 @@
           </li>
         </a>
         {%- endif -%}
+        {%- if site.plainwhite.social_links.twitter -%}
+        <a href="https://twitter.com/{{ site.plainwhite.social_links.twitter }}" target="_blank">
+          <li>
+            <i class="icon-twitter-squared"></i>
+          </li>
+        </a>
+        {%- endif -%}
         {%- if site.plainwhite.social_links.instagram -%}
         <a href="https://instagram.com/{{ site.plainwhite.social_links.instagram }}" target="_blank">
           <li>
             <i class="icon-instagram"></i>
+          </li>
+        </a>
+        {%- endif -%}
+        {%- if site.plainwhite.social_links.facebook -%}
+        <a href="https://facebook.com/{{ site.plainwhite.social_links.facebook }}" target="_blank">
+          <li>
+            <i class="icon-facebook-squared"></i>
           </li>
         </a>
         {%- endif -%}
@@ -173,35 +187,6 @@
   <script src="{{ "/assets/js/simple-jekyll-search.min.js" | relative_url }}"></script>
   <script src="{{ "/assets/js/search.js" | relative_url }}"></script>
   {% endif %}
-
-  <!-- Facebook Share button -->
-  <div class="fb-share-button" data-href="{{ page.url | absolute_url }}" data-layout="button_count"></div>
-
-  <!-- Twitter Share button -->
-  <a href="https://twitter.com/intent/tweet?url={{ page.url | absolute_url }}" target="_blank">
-    <i class="icon-twitter-squared"></i>
-  </a>
-
-  <!-- Load Facebook SDK for JavaScript -->
-  <script async src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="GgYJ1vGF"></script>
-
-  <script>
-    window.twttr = (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {};
-      if (d.getElementById(id)) return t;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://platform.twitter.com/widgets.js";
-      fjs.parentNode.insertBefore(js, fjs);
-      t._e = [];
-      t.ready = function(f) {
-        t._e.push(f);
-      };
-      return t;
-    }(document, "script", "twitter-wjs"));
-  </script>
-
 </body>
 
 </html>

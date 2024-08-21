@@ -1,12 +1,12 @@
 ---
 title: Contact
-author: Woojung Kim
-date: 2024-08-24
+author: woojung
+date: 2022-02-05
 category: Jekyll
 layout: post
 ---
 
-freshtropicalmango@gmail.com
+freshtropicalmango@gamil.com
 
 https://sunshinefresh.github.io/
 https://blog.naver.com/sunshinefresh-
