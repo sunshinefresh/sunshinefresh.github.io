@@ -1,7 +1,7 @@
 ---
 title: Contact
 author: Woojung Kim
-date: 2024-08-21
+date: 2024-08-24
 category: Jekyll
 layout: post
 ---
