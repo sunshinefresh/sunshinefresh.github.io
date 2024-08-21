@@ -1,9 +1,8 @@
 ---
-title: Design Draft
-author: Tao He
-date: 2022-02-06
+title: -
+author: Woojung Kim
+date: 2024-08-22
 category: Jekyll
 layout: post
 ---
 
-This is an draft page.
